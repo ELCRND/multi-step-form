@@ -20,7 +20,7 @@ function App() {
         <BrowserRouter>
           <Sidebar />
           <Routes>
-            <Route path="/multStepForm" element={<Start />}></Route>
+            <Route path="/multiStepForm" element={<Start />}></Route>
             <Route path="personal-info" element={<PersonalInfo />} />
             <Route path="select-plan" element={<SelectPlan />} />
             <Route path="addons" element={<Addons />} />
