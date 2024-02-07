@@ -1,0 +1,15 @@
+.back {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--White);
+  color: var(--Cool-gray);
+}
+.back > a {
+  text-decoration: none;
+  color: var(--Cool-gray);
+}
+.back > a:hover {
+  cursor: pointer;
+  color: var(--Marine-blue);
+}

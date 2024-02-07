@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  height: 100%;
+}
+@media (max-width: 640px) {
+  .form {
+    gap: 20px;
+  }
+}

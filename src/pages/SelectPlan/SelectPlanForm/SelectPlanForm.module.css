@@ -1,0 +1,21 @@
+.form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Ubuntu-bold;
+}
+.plansList {
+  display: flex;
+  gap: 30px;
+}
+.error {
+  color: var(--Red-light);
+}
+
+@media (max-width: 640px) {
+  .plansList {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

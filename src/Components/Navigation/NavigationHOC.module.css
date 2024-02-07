@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav > *:not([type="submit"]) {
+  align-self: flex-start;
+  font-family: Ubuntu-bold;
+  font-size: inherit;
+}
+.nav > *:last-child {
+  align-self: flex-end;
+  font-family: Ubuntu-bold;
+  font-size: inherit;
+}
+.nav:has([type="submit"]:first-child) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    bottom: -150px;
+    left: -40px;
+    background-color: var(--White);
+  }
+}

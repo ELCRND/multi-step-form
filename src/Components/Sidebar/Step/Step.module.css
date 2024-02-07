@@ -1,0 +1,36 @@
+.step {
+  display: grid;
+  grid-template-columns: 40px 10px auto;
+  grid-template-rows: 20px 20px;
+  grid-template-areas:
+    "num . title"
+    "num . info";
+  align-items: center;
+  justify-content: start;
+}
+.step__num {
+  grid-area: num;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  color: var(--White);
+  background-color: transparent;
+  font-family: Ubuntu-bold;
+}
+.step__num_active {
+  background-color: var(--Pastel-blue);
+}
+
+.step__title {
+  grid-area: title;
+  text-align: start;
+  color: var(--Cool-gray);
+}
+.step__info {
+  grid-area: info;
+  color: var(--White);
+}

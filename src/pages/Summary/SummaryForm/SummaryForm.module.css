@@ -1,0 +1,70 @@
+.form {
+  height: 100%;
+}
+
+.wrapper {
+  background-color: var(--Magnolia);
+  padding: 20px;
+}
+
+.plan {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 5px 5px 0 0;
+  font-family: Ubuntu-bold;
+}
+
+.plan > span:first-child::first-letter {
+  text-transform: uppercase;
+}
+
+.plan > button {
+  grid-row: 2 / 3;
+  width: min-content;
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  color: var(--Cool-gray);
+}
+
+.plan > span:last-child {
+  grid-row: 2 / 3;
+  position: relative;
+  bottom: 10px;
+}
+
+.addons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-top: 20px;
+  gap: 20px;
+  border-top: 2px solid var(--Light-gray);
+  border-radius: 0 0 5px 5px;
+  background-color: var(--Magnolia);
+  color: var(--Cool-gray);
+  font-family: Ubuntu-medium;
+}
+
+.addons > span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addons > span > span {
+  color: var(--Marine-blue);
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: var(--Cool-gray);
+}
+
+.total > span {
+  font-family: Ubuntu-bold;
+  font-size: 20px;
+  color: var(--Purplish-blue);
+}

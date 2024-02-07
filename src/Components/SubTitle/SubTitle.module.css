@@ -1,0 +1,7 @@
+.subTitle {
+  margin-bottom: 50px;
+  text-align: start;
+  color: var(--Cool-gray);
+  font-size: 1.1rem;
+  font-family: Ubuntu-medium;
+}

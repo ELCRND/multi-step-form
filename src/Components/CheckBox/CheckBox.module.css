@@ -1,0 +1,48 @@
+.addon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid var(--Pastel-blue);
+  border-radius: 10px;
+
+  font-family: Ubuntu-bold;
+}
+.addon:hover {
+  background-color: var(--Alabaster);
+}
+.addon:has(:checked) {
+  background-color: var(--Magnolia);
+}
+.checkbox::before {
+  display: block;
+  position: relative;
+  right: 4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--Cool-gray);
+  border-radius: 5px;
+  background-color: var(--White);
+}
+.checkbox:checked::before {
+  background-color: var(--Purplish-blue);
+  border: none;
+}
+.checkbox:checked::after {
+  position: relative;
+  bottom: 18px;
+  content: url("../../assets/images/icon-checkmark.svg");
+}
+.info {
+  width: calc(100% / 1.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.info__description {
+  color: var(--Cool-gray);
+}
+.price {
+  color: var(--Purplish-blue);
+}
