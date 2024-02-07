@@ -6,11 +6,10 @@ import SelectPlan from "./pages/SelectPlan/SelectPlan";
 import Addons from "./pages/Addons/Addons";
 import Summary from "./pages/Summary/Summary";
 import ThankYou from "./pages/ThankYou/ThankYou";
-const N = () => {
+const Start = () => {
   return (
     <div>
-      {" "}
-      <Link to={"personal-info"}>start</Link>
+      <Link to={"/personal-info"}>start</Link>
     </div>
   );
 };
@@ -21,7 +20,7 @@ function App() {
         <BrowserRouter>
           <Sidebar />
           <Routes>
-            <Route path="/" element={<N />}></Route>
+            <Route path="/" element={<Start />}></Route>
             <Route path="personal-info" element={<PersonalInfo />} />
             <Route path="select-plan" element={<SelectPlan />} />
             <Route path="addons" element={<Addons />} />
